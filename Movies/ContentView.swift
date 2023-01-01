@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var moviesModel: MoviesModel = MoviesModel()
+
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            Form{
+                ForEach(moviesModel.movies, id: \.id) { movie in
+                    Text(movie.originalTitle)
+                }
+            }.navigationTitle("Movies")
+        }.onAppear{
+            moviesModel.loadMovies()
         }
-        .padding()
     }
 }
 

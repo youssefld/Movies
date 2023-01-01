@@ -15,6 +15,7 @@
 		B301AD302961CBEF0093588A /* MoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301AD2F2961CBEF0093588A /* MoviesUITests.swift */; };
 		B301AD322961CBEF0093588A /* MoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301AD312961CBEF0093588A /* MoviesUITestsLaunchTests.swift */; };
 		B301AD402961CF2F0093588A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B301AD3F2961CF2F0093588A /* Alamofire */; };
+		B301AD46296200130093588A /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301AD45296200130093588A /* MoviesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B301AD2B2961CBEF0093588A /* MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B301AD2F2961CBEF0093588A /* MoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUITests.swift; sourceTree = "<group>"; };
 		B301AD312961CBEF0093588A /* MoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B301AD45296200130093588A /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +98,11 @@
 		B301AD132961CBED0093588A /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				B301AD1A2961CBEE0093588A /* Preview Content */,
+				B301AD44296200060093588A /* Model */,
 				B301AD142961CBED0093588A /* MoviesApp.swift */,
 				B301AD162961CBED0093588A /* ContentView.swift */,
 				B301AD182961CBEE0093588A /* Assets.xcassets */,
-				B301AD1A2961CBEE0093588A /* Preview Content */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -127,6 +130,14 @@
 				B301AD312961CBEF0093588A /* MoviesUITestsLaunchTests.swift */,
 			);
 			path = MoviesUITests;
+			sourceTree = "<group>";
+		};
+		B301AD44296200060093588A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B301AD45296200130093588A /* MoviesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B301AD46296200130093588A /* MoviesModel.swift in Sources */,
 				B301AD172961CBED0093588A /* ContentView.swift in Sources */,
 				B301AD152961CBED0093588A /* MoviesApp.swift in Sources */,
 			);
